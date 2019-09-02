@@ -1,0 +1,66 @@
+[contenteditable] b {
+    font-weight: normal;
+}
+
+[contenteditable] i {
+    font-style: normal;
+}
+
+.code-editor {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px #dddddd;
+}
+
+.code-editor-gutter {
+    padding-top: 2px !important;
+    width: 30px !important;
+    text-align: right !important;
+    padding-right: 2px !important;
+    background-color: #343A40;
+    color: #F8F9FA;
+    border-radius: 5px;
+}
+
+.code-editor-lines {
+    overflow: auto !important;
+    width: calc(100% - 30px) !important;
+    height: 100% !important;
+    padding-top: 2px !important;
+    text-align: left !important;
+    outline: none;
+    white-space: nowrap;
+}
+
+.code-editor-lines:focus {
+    box-shadow: 0 0 10px #d8faff !important;
+}
+
+.code-editor-lines::-webkit-scrollbar {
+    width: 7px !important;
+    height: 7px !important;
+}
+
+/*Track*/
+.code-editor-lines::-webkit-scrollbar-track {
+    background: #f1f1f1 !important;
+}
+
+/* Handle */
+.code-editor-lines::-webkit-scrollbar-thumb {
+    background: #888 !important;
+}
+
+/* Handle on hover */
+.code-editor-lines::-webkit-scrollbar-thumb:hover {
+    background: #555 !important;
+    cursor: default !important;
+}
+
+*, ::before, ::after {
+    box-sizing: border-box !important;
+}
