@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bituhh Code Editor</title>
+    <link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="../../node_modules/@fortawesome/fontawesome-free/css/all.min.css" type="text/css" rel="stylesheet">
+    <script src="../../node_modules/codemirror/lib/codemirror.js"></script>
+    <link href="../../node_modules/codemirror/lib/codemirror.css" rel="stylesheet">
+    <script src="../../node_modules/codemirror/mode/javascript/javascript.js"></script>
+    <link href="styles.css" type="text/css" rel="stylesheet">
+    <script src="../../node_modules/codemirror/addon/selection/active-line.js"></script>
+    <script src="../../node_modules/codemirror/addon/scroll/simplescrollbars.js"></script>
+</head>
+<body class="container-fluid">
+<div class="row vh-100">
+    <nav class="bg-dark" id="navigator-container">
+        <table class="table table-hover text-left table-dark">
+            <thead class="thead-dark">
+            <tr>
+                <td class="text-center">File Navigator
+                    <button class="btn float-right p-0 btn-dark"><i class="fas fa-chevron-left p-0"></i></button>
+                </td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="">
+                    <i class="fas fa-folder-open"></i> Folder One
+                </td>
+            </tr>
+            <tr>
+                <td class="">
+                    <i class="fas fa-folder-open"></i> Folder Two
+                </td>
+            </tr>
+            <tr>
+                <td class="">
+                    <i class="fas fa-file-code"></i> File One
+                </td>
+            </tr>
+            <tr>
+                <td class="">
+                    <i class="fas fa-file-code"></i> File One
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </nav>
+    <div id="content-container">
+        <div class="container-fluid vh-100">
+            <div class="row text-center" id="editor-viewer-container">
+                <div class="col-6" id="code-editor-container">
+                    <div class="row">
+                        <div class="col-12 p-3">
+                            <h3>Code Editor</h3>
+                        </div>
+                    </div>
+                    <div class="text-left p-0 m-0" id="editor-wrapper">
+                    </div>
+                </div>
+                <div class="col-6" id="previewer-container">
+                    <h3 class="">Preview</h3>
+                </div>
+            </div>
+            <div class="row">
+                <h1>Console</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="code-editor.js"></script>
+</body>
+</html>
